@@ -1,3 +1,4 @@
+<!-- hello there -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -28,6 +29,44 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  
+  <script>
+
+
+
+    let data = [{
+        Category: 'Provident Fund',
+        services: ["PF Registration", 'Employee UAN Genaration', 'Monthly PF Challan Preparation', 'Monthly PF return filing','Employee death claim','PF department liasoning','PF department audit conduct','Form 5A Updation','Digital Signature Updation','Any otheer PF related queries','Employee claim withdrawl']
+    
+      },
+      {
+        Category: 'Labour Law',
+        services: ['S&E registration', 'Professional Tax registration', 'Monthly deposit challans']
+      },
+      {
+        Category: 'Factory Tax',
+        services: ['NSDL', 'NPS', 'UPSC', 'GRE', 'IIT']
+      }
+    ];
+    
+    
+    window.onload = function() {
+      var itemSel = document.getElementById("first");
+      var subitemSel = document.getElementById("second");
+    
+      for (var x in data) {
+        itemSel.options[itemSel.options.length] = new Option(data[x].Category, x);
+      }
+      itemSel.onchange = function() {
+        //empty 
+        subitemSel.length = 1;
+        //display correct values
+        for (var y of data[this.value].services) {
+          subitemSel.options[subitemSel.options.length] = new Option(y, y);
+        }
+      }
+    }
+    </script>
 
 </head>
 
@@ -479,23 +518,35 @@
               <h2>
                 Get in touch
               </h2>
-              <p>Reach out to us for inquiries, quotes, or any assistance you may need. Our friendly team is here to help you find the perfect packaging solution.</p>
+              <p>Reach out to us for inquiries, quotes, or any assistance you may need. Our friendly team is here to help you find the perfect consulting solution.</p>
             </div>
 
             <form action="forms/contact.php" method="post" role="form" class="php-email-form">
               <div class="row">
+                <!-- <label for="name">Name</label> -->
                 <div class="form-group col-md-6">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
                 </div>
                 <div class="form-group col-md-6 mt-3 mt-md-0">
+                  <!-- <label for="email">Email</label> -->
                   <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
                 </div>
               </div>
               <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                <label for="first">Service Category</label>
+                <select id="first" name="first" class="form-control">
+                  <option value="" selected="selected">Please select a Category</option>
+                </select>
               </div>
               <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="10" placeholder="Message" required></textarea>
+                <label for="second">Service</label>
+                <select id="second" name="second" class="form-control">
+                  <option value="" selected="selected">Please select a Service</option>
+                </select>
+              </div>
+              <div class="form-group mt-3">
+                <label for="first">Additional Queries</label>
+                <textarea class="form-control" name="message" rows="10" placeholder="Message"></textarea>
               </div>
               <div class="my-3">
                 <div class="loading">Loading</div>
@@ -579,7 +630,7 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
-  <!-- Template Main JS File -->
+  <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
 </body>
