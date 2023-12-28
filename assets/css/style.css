@@ -1158,23 +1158,13 @@ section {
 /* cllient section  */
 
 
-@media (max-width:800px) {
-  
-  
-}
 
 
 /* contact section  */
 
 @media (max-width:600px) {
-  .clients .client-logo img {
-    max-width: 50%;
-    filter: none;
-  }
-  
-  .clients .client-logo:hover img {
-    filter: none;
-    transform: scale(1.1);
+  .col{
+    margin: -6px;
   }
   
 }
