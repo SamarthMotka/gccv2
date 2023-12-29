@@ -616,73 +616,6 @@ section {
   justify-content: center;
 }
 
-/*--------------------------------------------------------------
-# Portfolio Details
---------------------------------------------------------------*/
-.portfolio-details {
-  padding-top: 40px;
-  justify-content: center;
-  align-items: center;
-}
-
-.portfolio-details .portfolio-details-slider img {
-  width: 100%;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination {
-  margin-top: 20px;
-  position: relative;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: #fff;
-  opacity: 1;
-  border: 1px solid #00B4D8;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #00B4D8;
-}
-
-.portfolio-details .portfolio-info {
-  padding: 30px;
-  box-shadow: 0px 0 30px rgba(54, 65, 70, 0.08);
-}
-
-.portfolio-details .portfolio-info h3 {
-  font-size: 22px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #eee;
-}
-
-.portfolio-details .portfolio-info ul {
-  list-style: none;
-  padding: 0;
-  font-size: 15px;
-}
-
-.portfolio-details .portfolio-info ul li+li {
-  margin-top: 10px;
-}
-
-.portfolio-details .portfolio-description {
-  padding-top: 30px;
-}
-
-.portfolio-details .portfolio-description h2 {
-  font-size: 26px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-.portfolio-details .portfolio-description p {
-  padding: 0;
-}
-
 
 /*--------------------------------------------------------------
 # Testimonials
@@ -1155,8 +1088,137 @@ section {
 /* mobile responsiveness */
 
 
-/* cllient section  */
+/* serviece section  */
 
+@media (max-width:767px) {
+  .services {
+    padding: 20px 0;
+  }
+  
+  .service-box{
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+    padding: 30px 20px;
+    background: #fff;
+  }
+  
+  .services .service-item {
+    padding: 5px;
+    background: #ffffff;
+    height: 100%;
+    border-radius: 10px;
+    /* border: 3px solid #00B4D8; */
+  }
+  
+  .services .service-item .icon {
+    width: 20px;
+    height: 20px;
+    margin: 0 auto;
+    /* position: relative; */
+    margin-bottom: 30px;
+  }
+  
+  .services .service-item .icon i {
+    color: var(--color-default);
+    font-size: 30px;
+    transition: ease-in-out 0.3s;
+    z-index: 2;
+    /* position: relative; */
+  }
+  .spc{
+    padding: 0 5px ;
+    
+  }
+  .card2 {
+    display: block;
+    top: 0px;
+    position: relative;
+    background-color: #f2f8f9;
+    border-radius: 4px;
+    padding: 32px 24px;
+    margin: 2px;
+    text-decoration: none;
+    z-index: 0;
+    overflow: hidden;
+    border: 2px solid #f2f8f9;
+  
+    &:hover {
+      transition: all 0.2s ease-out;
+      box-shadow: 0px 4px 8px rgba(29, 29, 29, 0.2);
+      top: -4px;
+      border: 2px solid #00B4D8;
+      background-color: rgb(250, 250, 250);
+    }
+  
+    &:before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: -16px;
+      right: -16px;
+      height: 32px;
+      width: 32px;
+      border-radius: 32px;
+      transform: scale(2);
+      transform-origin: 50% 50%;
+      transition: transform 0.15s ease-out;
+    }
+  
+    &:hover:before {
+      transform: scale(2.15);
+    }
+  }
+  
+  
+  /* .services .service-item .icon:before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: #eeeeee;
+    border-radius: 50px;
+    z-index: 1;
+    top: 10px;
+    right: -20px;
+    transition: 0.3s;
+  } */
+  
+  .services .service-item h3 {
+    color: var(--color-default);
+    font-weight: 700;
+    margin: 0 0 20px 0;
+    padding-bottom: 8px;
+    font-size: 18px;
+    position: relative;
+    display: inline-block;
+    border-bottom: 4px solid #eeeeee;
+    transition: 0.3s;
+  }
+  
+  .services .service-item p {
+    line-height: 24px;
+    font-size: 12px;
+    margin-bottom: 0;
+  }
+  
+  .services .service-item .readmore {
+    margin-top: 12px;
+    font-weight: 700;
+    display: inline-block;
+    color: var(--color-primary);
+  }
+  
+  .services .service-item:hover {
+    /* background: #00B4D8; */
+    transition: 0.5s
+  }
+  
+  .services .service-item:hover h3 {
+    border-color: var(--color-primary);
+  }
+  
+}
 
 
 
