@@ -281,3 +281,56 @@ new Swiper('.clients-slider', {
   });
 
 })()
+
+
+// Accordian Menu
+
+
+//Accordian menu
+//I have created separate functions for opening tabs and validating the URLs for each service category, because the optimized code was not working for some reason.
+function openTab(number){  
+  let item1 = document.querySelector(`#btn${number}`)
+  item1.classList.remove('collapsed');
+  item1.setAttribute(item1.getAttribute('aria-expanded'),true);
+  let item1a = document.querySelector(`#collapse${number}`)
+  item1a.classList.add('show');
+}
+
+function validatingURl(){
+  if(window.location.hash === '#body1'){
+    openTab(1);
+  }
+  else if(window.location.hash === '#body2'){
+    openTab(2);
+  }
+  else if(window.location.hash === '#body3'){
+    openTab(3);
+  }
+  else if(window.location.hash === '#body4'){
+    openTab(4)
+  }
+  else if(window.location.hash === '#body5'){
+    openTab(5)
+  }
+  else if(window.location.hash === '#body6'){
+    openTab(6)
+  }
+  else if(window.location.hash === '#body7'){
+    openTab(7)
+  }
+  else if(window.location.hash === '#body8'){
+    openTab(8);
+  }
+  else if(window.location.hash === '#body9'){
+    openTab(9);
+  }
+  else if(window.location.hash === '#body10'){
+    openTab(10);
+  }
+  else if(window.location.hash === '#body11'){
+    openTab(11);
+  }
+}
+
+validatingURl();
+
