@@ -912,12 +912,32 @@ section {
   padding: 15px;
   font-weight: 600;
 }
+.error-message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+}
+
 
 .contact .php-email-form .error-message br+br {
   margin-top: 25px;
 }
+.error-message br+br {
+  margin-top: 25px;
+}
 
 .contact .php-email-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+.sent-message {
   display: none;
   color: #fff;
   background: #18d26e;
@@ -932,8 +952,25 @@ section {
   text-align: center;
   padding: 15px;
 }
+.loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+}
 
 .contact .php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
+  animation: animate-loading 1s linear infinite;
+}
+.loading:before {
   content: "";
   display: inline-block;
   border-radius: 50%;
@@ -969,6 +1006,19 @@ section {
   border-radius: 4px;
 }
 
+button[type=submit] {
+  background: #00B4D8;
+  border: 0;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 4px;
+}
+button[type=submit]:hover {
+  background: #1eb4ff;
+}
+
+
 .contact .php-email-form button[type=submit]:hover {
   background: #1eb4ff;
 }
@@ -982,6 +1032,8 @@ section {
     transform: rotate(360deg);
   }
 }
+
+
 
 
 /*--------------------------------------------------------------
@@ -1254,4 +1306,12 @@ section {
 
 .accordion{
   margin-top: 70px;
+}
+
+
+
+.show {
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
 }
