@@ -634,13 +634,26 @@ section {
 }
 
 .testimonials .testimonial-item .testimonial-img {
-  width: 90px;
-  border-radius: 50%;
+  /* width: 90px; */
+  /* border-radius: 50%; */
   margin: -40px 0 0 40px;
   position: relative;
   z-index: 2;
   border: 6px solid #fff;
 }
+.width-ovr{
+  width: 100px;
+}
+.width-adani{
+  width: 200px;
+}
+.width-tradebulls{
+  width: 160px;
+}
+.width-guj-tour{
+  width: 130px;
+}
+
 
 .testimonials .testimonial-item h3 {
   font-size: 18px;
