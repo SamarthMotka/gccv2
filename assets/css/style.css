@@ -1314,4 +1314,5 @@ button[type=submit]:hover {
   display: block !important;
   opacity: 1 !important;
   visibility: visible !important;
+  overflow : hidden !important;
 }
