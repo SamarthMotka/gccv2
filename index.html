@@ -32,12 +32,9 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-  
   <script>
-
-
-
-    let data = [{
+      
+      let data = [{
         Category: 'Provident Fund',
         services: ["PF Registration", 'Employee UAN Genaration', 'Monthly PF Challan Preparation', 'Monthly PF return filing','Employee death claim','PF department liasoning','PF department audit conduct','Form 5A Updation','Digital Signature Updation','Any otheer PF related queries','Employee claim withdrawl']
     
@@ -56,6 +53,8 @@
     window.onload = function() {
       var itemSel = document.getElementById("first");
       var subitemSel = document.getElementById("second");
+      var itemSel1 = document.getElementById("third");
+      var subitemSel1 = document.getElementById("fourth");
     
       for (var x in data) {
         itemSel.options[itemSel.options.length] = new Option(data[x].Category, x);
@@ -68,8 +67,25 @@
           subitemSel.options[subitemSel.options.length] = new Option(y, y);
         }
       }
+
+      
+      for (var x in data) {
+        itemSel1.options[itemSel1.options.length] = new Option(data[x].Category, x);
+      }
+      itemSel1.onchange = function() {
+        //empty 
+        subitemSel1.length = 1;
+        //display correct values
+        for (var y of data[this.value].services) {
+          subitemSel1.options[subitemSel1.options.length] = new Option(y, y);
+        }
+      }
     }
-    </script>
+    
+  </script>
+  
+  
+  
 
 </head>
 
@@ -103,22 +119,22 @@
               <li class="dropdown"><a href="#"><span>ESIC</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
                   <li><a href="service_inner_ESIC.html#body1">ESIC Registration</a></li>
-                  <li><a href="service_inner_ESIC.html#body2">Employee Insurance number generation</a></li>
-                  <li><a href="service_inner_ESIC.html#body3">Monthly ESIC challan preparation</a></li>
-                  <li><a href="service_inner_ESIC.html#body4">Monthly ESIC return filling</a></li>
-                  <li><a href="service_inner_ESIC.html#body5">Employee TIC generation</a></li>
+                  <li><a href="service_inner_ESIC.html#body2">Employee Insurance Number Generation</a></li>
+                  <li><a href="service_inner_ESIC.html#body3">Monthly ESIC Challan Preparation</a></li>
+                  <li><a href="service_inner_ESIC.html#body4">Monthly ESIC Return Filling</a></li>
+                  <li><a href="service_inner_ESIC.html#body5">Employee TIC Generation</a></li>
                   <li><a href="service_inner_ESIC.html#body6">Employees Insurance Card(Pehcahaan card)</a></li>
-                  <li><a href="service_inner_ESIC.html#body7">Employee accidental death claim</a></li>
-                  <li><a href="service_inner_ESIC.html#body8">ESIC department liasoning</a></li>
-                  <li><a href="service_inner_ESIC.html#body9">ESIC department audit conduct</a></li>
-                  <li><a href="service_inner_ESIC.html#body10">Any other ESIC related queries</a></li>
+                  <li><a href="service_inner_ESIC.html#body7">Employee Accidental Death claim</a></li>
+                  <li><a href="service_inner_ESIC.html#body8">ESIC Department liasoning</a></li>
+                  <li><a href="service_inner_ESIC.html#body9">ESIC Department Audit Conduct</a></li>
+                  <li><a href="service_inner_ESIC.html#body10">Any Other ESIC Related Queries</a></li>
                 </ul>
               </li>
               <li class="dropdown"><a href="#"><span>Professional Tax</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
-                  <li><a href="service_inner_PT.html#body1">Shops and establishment registration</a></li>
-                  <li><a href="service_inner_PT.html#body2">Professional tax regitration</a></li>
-                  <li><a href="service_inner_PT.html#body3">Monthly deposit challans</a></li>
+                  <li><a href="service_inner_PT.html#body1">Shops And Establishment Registration</a></li>
+                  <li><a href="service_inner_PT.html#body2">Professional Tax Registration</a></li>
+                  <li><a href="service_inner_PT.html#body3">Monthly Deposit Challans</a></li>
                 </ul>
               </li>
               <li class="dropdown"><a href="#"><span>Labour Law</span> <i class="bi bi-chevron-right"></i></a>
@@ -132,7 +148,7 @@
               <li class="dropdown"><a href="#"><span>Factory Act</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
                   <li><a href="service_inner_FA.html#body1">Factory License</a></li>
-                  <li><a href="service_inner_FA.html#body2">Factory plan as per rule</a></li>
+                  <li><a href="service_inner_FA.html#body2">Factory Plan as per rule</a></li>
                   <li><a href="service_inner_FA.html#body3">Stability Certificate</a></li>
                   <li><a href="service_inner_FA.html#body4">Leave Policy</a></li>
                   <li><a href="service_inner_FA.html#body5">Safety and Health</a></li>
@@ -197,32 +213,32 @@
         </div>
         <div class="modal-body">
           <!-- Add your contact form here -->
-          <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+          <form  role="form" class="php-email-form" onsubmit="sendEmail(); reset(); return false;">
             <div class="row">
               <!-- <label for="name">Name</label> -->
               <div class="form-group col-md-6">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                <input type="text" name="name" class="form-control" id="name1" placeholder="Your Name" required>
               </div>
               <div class="form-group col-md-6 mt-3 mt-md-0">
                 <!-- <label for="email">Email</label> -->
-                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                <input type="email" class="form-control" name="email" id="email1" placeholder="Your Email" required>
               </div>
             </div>
             <div class="form-group mt-3">
-              <label for="first">Service Category</label>
-              <select id="first" name="first" class="form-control">
+              <label for="third">Service Category</label>
+              <select id="third" name="third" class="form-control">
                 <option value="" selected="selected">Please select a Category</option>
               </select>
             </div>
             <div class="form-group mt-3">
-              <label for="second">Service</label>
-              <select id="second" name="second" class="form-control">
+              <label for="fourth">Service</label>
+              <select id="fourth" name="fourth" class="form-control">
                 <option value="" selected="selected">Please select a Service</option>
               </select>
             </div>
             <div class="form-group mt-3">
               <label for="first">Additional Queries</label>
-              <textarea class="form-control" name="message" rows="10" placeholder="Message"></textarea>
+              <textarea class="form-control" name="message" rows="10" id="query1" placeholder="Message"></textarea>
             </div>
             <div class="my-3">
               <div class="loading">Loading</div>
@@ -577,7 +593,7 @@
               <p>Reach out to us for inquiries, quotes, or any assistance you may need. Our friendly team is here to help you find the perfect consulting solution.</p>
             </div>
 
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form  role="form" class="php-email-form" onsubmit="sendEmail1(); reset(); return false">
               <div class="row">
                 <!-- <label for="name">Name</label> -->
                 <div class="form-group col-md-6">
@@ -589,9 +605,12 @@
                 </div>
               </div>
               <div class="form-group mt-3">
+                <input type="tel" class="form-control" name="phonenumber" id="phonenumber" placeholder="Phone Number" required>
+              </div>
+              <div class="form-group mt-3">
                 <label for="first">Service Category</label>
                 <select id="first" name="first" class="form-control">
-                  <option value="" selected="selected">Please select a Category</option>
+                  <option  value="" selected="selected">Please select a Category</option>
                 </select>
               </div>
               <div class="form-group mt-3">
@@ -602,7 +621,7 @@
               </div>
               <div class="form-group mt-3">
                 <label for="first">Additional Queries</label>
-                <textarea class="form-control" name="message" rows="10" placeholder="Message"></textarea>
+                <textarea class="form-control" name="message" id="query" rows="10" placeholder="Message"></textarea>
               </div>
               <div class="my-3">
                 <div class="loading">Loading</div>
@@ -690,23 +709,61 @@
   <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
+
+  <!-- Contact Form Backend -->
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script>
+    function sendEmail1(){
+      Email.send({
+        SecureToken : "fb3b054e-2ff2-4451-9669-92d4a4ebef2e",
+    To : 'tejdoshi5@gmail.com',
+    From : "tejdoshi.ict19@gmail.com",
+    Subject : "You have received a new Entry",
+    Body : "Name: " + document.getElementById("name").value
+    + "<br> Email: " + document.getElementById('email').value
+    + "<br> Phone: " + document.getElementById('phonenumber').value
+    + "<br> Service type:  " + document.getElementById('second').value
+    + "<br> Additional Query: " + document.getElementById('query').value
+}).then(
+  message => alert(message)
+);
+ }
+
+  function sendEmail(){
+    
+      Email.send({
+        SecureToken : "32bf7584-740a-41d9-8c69-d6cdf4fe28a0",
+    To : 'tejdoshi5@gmail.com',
+    From : "samarthmotka.ict19@gmail.com",
+    Subject : "You have received a new Entry",
+    Body : "Name: " + document.getElementById("name1").value
+    + "<br> Email: " + document.getElementById('email1').value
+    + "<br> Phone: " + document.getElementById('phonenumber1').value
+    + "<br> Service type:  " + document.getElementById('fourth').value
+    + "<br> Additional Query: " + document.getElementById('query1').value
+}).then(
+  message => alert(message)
+);
+    }
   
+  </script>
+
+
   <script>
     document.addEventListener('DOMContentLoaded', function() {
-      // Set the timeout to show the popup after 10 seconds
       setTimeout(function() {
         // Show the  modal
         document.getElementById('contactModal').classList.add('show');
-      }, 5000); // 10000 milliseconds = 10 seconds
+      }, 5000); 
     });
   </script>
   <script>
     document.addEventListener('DOMContentLoaded', function() {
-      // Get the element by ID
+
       var Element = document.getElementById('close-btn')
       var mainElement = document.getElementById('contactModal')
   
-      // Attach a click event listener to the element
+      
       Element.addEventListener('click', function() {
       mainElement.classList.remove('show');
       });
