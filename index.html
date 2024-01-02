@@ -32,21 +32,57 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- Javascript code for stuffing data into contact form  -->
   <script>
       
       let data = [{
         Category: 'Provident Fund',
-        services: ["PF Registration", 'Employee UAN Genaration', 'Monthly PF Challan Preparation', 'Monthly PF return filing','Employee death claim','PF department liasoning','PF department audit conduct','Form 5A Updation','Digital Signature Updation','Any otheer PF related queries','Employee claim withdrawl']
+        services: ["PF Registration", 'Employee UAN Genaration', 'Monthly PF Challan Preparation', 'Monthly PF Return Filing','Employee Death Claim','PF Department Liasoning','PF Department Audit Conduct','Form 5A Updation','Digital Signature Updation','Any other PF related Queries','Employee Claim Withdrawl']
     
       },
       {
-        Category: 'Labour Law',
-        services: ['S&E registration', 'Professional Tax registration', 'Monthly deposit challans']
+        Category: 'ESIC',
+        services: ['ESIC Registration',
+'Employee Insurance Number Generation',
+'Monthly ESIC Challan Preparation',
+'Monthly ESIC Return Filling',
+'Employee TIC Generation',
+'Employees Insurance Card(Pehcahaan card)',
+'Employee Accidental Death Claim',
+'ESIC Department Liasoning',
+'ESIC Department Audit Conduct',
+'Any Other ESIC Related Queries']
       },
       {
+        Category: 'Labour Law',
+        services: ['Minimum Wages Act',
+'Labour Welfare Act',
+'Construction Act',
+'Maternity Act']
+      },
+      {
+        Category: 'Professional Tax',
+        services: ['Shops And Establishment Registration',
+'Professional Tax Registration',
+'Monthly Deposit Challans']
+      },
+    
+      {
         Category: 'Factory Tax',
-        services: ['NSDL', 'NPS', 'UPSC', 'GRE', 'IIT']
-      }
+        services: ['Factory License',
+'Factory Plan as per rule',
+'Stability Certificate',
+'Leave Policy',
+'Safety and Health',
+'Child Labour Act',
+'Building and other Construction Act']
+      },
+      {
+        Category: 'Other Services',
+        services: ['NSDL:- National Security Deposit Limited',
+      'NPS:- National Pension Scheme']
+      },
     ];
     
     
@@ -329,7 +365,7 @@
               <div class="icon ">
                 <i class="bi bi-hospital"></i>
               </div>
-              <h3>ESCI</h3>
+              <h3>ESIC</h3>
               <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
               <a href="service_inner_ESIC.html" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
             </div>
@@ -703,7 +739,9 @@
   </footer>
   <!-- End Footer -->
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center active"><i class="bi bi-arrow-up-short"></i></a>
+  
+
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/aos/aos.js"></script>
