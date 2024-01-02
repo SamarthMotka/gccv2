@@ -213,7 +213,7 @@
         </div>
         <div class="modal-body">
           <!-- Add your contact form here -->
-          <form  role="form" class="php-email-form" onsubmit="sendEmail(); reset(); return false;">
+          <form  role="form" class="php-email-form" onsubmit="sendEmail2(); reset(); return false">
             <div class="row">
               <!-- <label for="name">Name</label> -->
               <div class="form-group col-md-6">
@@ -225,20 +225,23 @@
               </div>
             </div>
             <div class="form-group mt-3">
-              <label for="third">Service Category</label>
+              <input type="tel" class="form-control" name="phonenumber" id="phonenumber1" placeholder="Phone Number" required>
+            </div>
+            <div class="form-group mt-3">
+              <label for="first">Service Category</label>
               <select id="third" name="third" class="form-control">
-                <option value="" selected="selected">Please select a Category</option>
+                <option  value="" selected="selected">Please select a Category</option>
               </select>
             </div>
             <div class="form-group mt-3">
               <label for="fourth">Service</label>
-              <select id="fourth" name="fourth" class="form-control">
+              <select id="fourth" name="fourht" class="form-control">
                 <option value="" selected="selected">Please select a Service</option>
               </select>
             </div>
             <div class="form-group mt-3">
               <label for="first">Additional Queries</label>
-              <textarea class="form-control" name="message" rows="10" id="query1" placeholder="Message"></textarea>
+              <textarea class="form-control" name="query1" id="query1" rows="10" placeholder="Message"></textarea>
             </div>
             <div class="my-3">
               <div class="loading">Loading</div>
@@ -247,6 +250,11 @@
             </div>
             <div class="text-center"><button type="submit">Send Message</button></div>
           </form>
+        </div>
+
+      </div>
+
+    </div>
         </div>
       </div>
     </div>
@@ -311,7 +319,7 @@
               </div>
               <h3>Provident Fund</h3>
               <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
-              <a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+              <a href="service_inner_PF.html" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
             </div>
           </div><!-- End Service Item -->
           
@@ -323,7 +331,7 @@
               </div>
               <h3>ESCI</h3>
               <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
-              <a href="" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+              <a href="service_inner_ESIC.html" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
             </div>
           </div><!-- End Service Item -->
 
@@ -334,7 +342,7 @@
               </div>
               <h3>Professional Tax</h3>
               <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
-              <a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+              <a href="service_inner_PT.html" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
             </div>
           </div><!-- End Service Item -->
 
@@ -345,7 +353,7 @@
               </div>
               <h3>Labour Law</h3>
               <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
-              <a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+              <a href="service_inner_LL.html" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
             </div>
           </div><!-- End Service Item -->
 
@@ -354,9 +362,9 @@
               <div class="icon">
                 <i class="bi bi-buildings"></i>
               </div>
-              <h3>Factory Tax</h3>
+              <h3>Factory Act</h3>
               <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.</p>
-              <a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+              <a href="service_inner_FA.html" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
             </div>
           </div><!-- End Service Item -->
 
@@ -367,7 +375,7 @@
               </div>
               <h3>Other Services</h3>
               <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
-              <a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+              <a href="service_inner_OS.html" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
             </div>
           </div><!-- End Service Item -->
 
@@ -728,13 +736,11 @@
   message => alert(message)
 );
  }
-
-  function sendEmail(){
-    
+ function sendEmail2(){
       Email.send({
-        SecureToken : "32bf7584-740a-41d9-8c69-d6cdf4fe28a0",
+        SecureToken : "fb3b054e-2ff2-4451-9669-92d4a4ebef2e",
     To : 'tejdoshi5@gmail.com',
-    From : "samarthmotka.ict19@gmail.com",
+    From : "tejdoshi.ict19@gmail.com",
     Subject : "You have received a new Entry",
     Body : "Name: " + document.getElementById("name1").value
     + "<br> Email: " + document.getElementById('email1').value
@@ -744,8 +750,8 @@
 }).then(
   message => alert(message)
 );
-    }
-  
+ }
+
   </script>
 
 
@@ -754,7 +760,7 @@
       setTimeout(function() {
         // Show the  modal
         document.getElementById('contactModal').classList.add('show');
-      }, 5000); // 10000 milliseconds = 10 seconds
+      }, 20000); // 10000 milliseconds = 10 seconds
     });
   </script>
   <script>
