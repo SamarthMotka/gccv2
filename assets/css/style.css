@@ -266,6 +266,9 @@ h6 {
   transition: 0.4s;
   border-radius: 4px;
 }
+.callus-nav button:hover {
+  background: #1eb4ff;
+}
 .callus-acc a {
   color: #fff;
 }
@@ -404,38 +407,7 @@ h6 {
   .navbar ul {
     display: none;
   }
-  .callus-nav button{
-    background-image:     linear-gradient(
-       to right, 
-       #00B4D8,
-       #fff 16.65%,
-       #00B4D8 16.65%,
-       #fff 33.3%,
-       #00B4D8 33.3%,
-       #fff 49.95%,
-       #00B4D8 49.95%,
-       #fff 66.6%,
-       #00B4D8 66.6%,
-       #fff 83.25%,
-       #00B4D8 83.25%,
-       #fff 100%,
-       #00B4D8 100%
-      
-      
-      
-     );
-   animation:slidebg 3s linear infinite;
-  }
-  .callus-nav-font button a{
-    font-size: larger;
-    font-weight: 600;
-    color: #003651;
-  }
-  @keyframes slidebg {
-    to {
-      background-position:20vw;
-    }
-  }
+  
   .callus-nav{
     width: 100%;
     margin-right:12px;
@@ -467,6 +439,10 @@ h6 {
   }
   .callus-acc a {
     color: #fff;
+  }
+  .callus-acc button:hover {
+    background: #1eb4ff;
+    color: white;
   }
 }
 
@@ -1479,9 +1455,6 @@ button[type=submit]:hover {
 .breadcrumbs .container{
  margin-left: 0px;
 }
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
 @media (max-width:767px) {
   #hero .row{
     display: flex;
@@ -1504,8 +1477,6 @@ button[type=submit]:hover {
   }
 
 }
-=======
->>>>>>> Stashed changes
 /* 
 # Counts
 --------------------------------------------------------------*/ 
@@ -1534,9 +1505,4 @@ button[type=submit]:hover {
   font-weight: 600;
   font-size: 14px;
   color: #1e6ca6;
-<<<<<<< Updated upstream
 }
-=======
-}
->>>>>>> 3510cbf7bfd32a37aef79f68df2d22196a89c7ce
->>>>>>> Stashed changes
