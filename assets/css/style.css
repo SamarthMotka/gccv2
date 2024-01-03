@@ -138,7 +138,7 @@ a {
 }
 
 a:hover {
-  color: #1eb4ff;
+  color:white !important;
   text-decoration: none;
 }
 
