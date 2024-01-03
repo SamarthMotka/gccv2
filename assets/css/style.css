@@ -1448,7 +1448,7 @@ button[type=submit]:hover {
 }
 
 .counts .count-box span {
-  font-size: 48px;
+  font-size: 30px;
   line-height: 48px;
   display: block;
   font-weight: 700;
