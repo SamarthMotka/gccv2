@@ -1235,6 +1235,9 @@ button[type=submit]:hover {
 /* serviece section  */
 
 @media (max-width:767px) {
+  #header .logo img {
+    max-height: 40px;
+}
   .services {
     padding: 20px 0;
   }
