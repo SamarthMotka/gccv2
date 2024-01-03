@@ -250,8 +250,8 @@ h6 {
   transition: 0.4s;
   border-radius: 4px;
 }
-.callus-nav a {
-  color: #fff;
+.callus-nav button:hover {
+  background: #1eb4ff;
 }
 .callus-acc{
   width: 100%;
@@ -404,6 +404,38 @@ h6 {
   .navbar ul {
     display: none;
   }
+  .callus-nav button{
+    background-image:     linear-gradient(
+       to right, 
+       #00B4D8,
+       #fff 16.65%,
+       #00B4D8 16.65%,
+       #fff 33.3%,
+       #00B4D8 33.3%,
+       #fff 49.95%,
+       #00B4D8 49.95%,
+       #fff 66.6%,
+       #00B4D8 66.6%,
+       #fff 83.25%,
+       #00B4D8 83.25%,
+       #fff 100%,
+       #00B4D8 100%
+      
+      
+      
+     );
+   animation:slidebg 3s linear infinite;
+  }
+  .callus-nav-font button a{
+    font-size: larger;
+    font-weight: 600;
+    color: #003651;
+  }
+  @keyframes slidebg {
+    to {
+      background-position:20vw;
+    }
+  }
   .callus-nav{
     width: 100%;
     margin-right:12px;
@@ -533,7 +565,8 @@ h6 {
   background-position: right top;
   margin-top: 70px;
   padding: 60px 0;
-  height: 350px;
+  padding-bottom: 0px;
+  /* height: 350px; */
 }
 
 /* .hero-about-link{
@@ -587,7 +620,7 @@ text-align: center;
 }
 
 #hero .hero-img img {
-  width: 70%;
+  width: 50%;
 }
 
 @media (min-width: 1024px) {
@@ -886,6 +919,13 @@ section {
   justify-content: space-around;
   margin: 30px;
 } */
+.no-contact{
+  margin: 10px 0;
+}
+.loc-contact{
+  margin: 10px 0;
+}
+
 
 .col{
   /* align-items: center; */
@@ -1235,6 +1275,7 @@ button[type=submit]:hover {
 /* serviece section  */
 
 @media (max-width:767px) {
+  
   #header .logo img {
     max-height: 40px;
 }
@@ -1421,6 +1462,9 @@ button[type=submit]:hover {
   margin: 0;
   font-size: 14px;
 }
+.unique{
+  visibility: hidden;
+}
 
 .breadcrumbs ol li+li {
   padding-left: 10px;
@@ -1435,6 +1479,33 @@ button[type=submit]:hover {
 .breadcrumbs .container{
  margin-left: 0px;
 }
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+@media (max-width:767px) {
+  #hero .row{
+    display: flex;
+    flex-direction: column-reverse;
+    /* padding-bottom: 40px; */
+  }
+  .hero-h1{
+    padding-bottom: 40px;
+  }
+  .unique{
+    background-color: #00B4D8;
+    color: white;
+    text-align: center;
+    width: 180px;
+    height: 30px;
+    margin: 0 auto;
+    border-radius: 20px;
+    padding: 2.5px;
+    visibility: visible;
+  }
+
+}
+=======
+>>>>>>> Stashed changes
 /* 
 # Counts
 --------------------------------------------------------------*/ 
@@ -1463,4 +1534,9 @@ button[type=submit]:hover {
   font-weight: 600;
   font-size: 14px;
   color: #1e6ca6;
+<<<<<<< Updated upstream
 }
+=======
+}
+>>>>>>> 3510cbf7bfd32a37aef79f68df2d22196a89c7ce
+>>>>>>> Stashed changes
