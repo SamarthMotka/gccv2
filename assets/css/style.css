@@ -167,6 +167,19 @@ h6 {
   border-radius: 4px;
   transition: all 0.4s;
 }
+.back-to-whatsapp {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 62px;
+  bottom: 15px;
+  z-index: 996;
+  background: #25d366;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  transition: all 0.4s;
+}
 
 .back-to-top i {
   font-size: 28px;
@@ -207,12 +220,9 @@ h6 {
 #header.header-scrolled {
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
-#header .logo{
-  width: 100%;
-  text-align: right;
-}
+
 #header .logo img {
-  max-height: 40px;
+  max-height: 60px;
 }
 
 @media (max-width: 991px) {
@@ -228,6 +238,21 @@ h6 {
 /**
 * Desktop Navigation 
 */
+.callus-nav{
+  width: 100%;
+  text-align: right;
+}
+.callus-nav button{
+  background: #00B4D8;
+  border: 0;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 4px;
+}
+.callus-nav a {
+  color: #fff;
+}
 .navbar {
   padding: 0;
 }
@@ -284,6 +309,10 @@ h6 {
   background: #fff;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   transition: 0.3s;
+}
+.nav-container{
+  width: 100%;
+  margin: 0;
 }
 
 .navbar .dropdown ul li {
@@ -358,6 +387,22 @@ h6 {
 
   .navbar ul {
     display: none;
+  }
+  .callus-nav{
+    width: 100%;
+    margin-right:12px;
+    text-align: right;
+  }
+  .callus-nav button{
+    background: #00B4D8;
+    border: 0;
+    padding: 10px 24px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 4px;
+  }
+  .callus-nav a {
+    color: #fff;
   }
 }
 
@@ -456,8 +501,9 @@ h6 {
   background-position: right top;
   margin-top: 70px;
   padding: 60px 0;
-  
+  height: 350px;
 }
+
 /* .hero-about-link{
 display: flex;
 flex-direction: row;
@@ -473,16 +519,17 @@ text-align: center;
 }  */
 #hero h1 {
   margin: 0 0 20px 0;
-  font-size: 48px;
+  font-size: 40px;
+  /* width: 80%; */
   font-weight: 700;
   line-height: 56px;
   color: #ffffff;
 }
 
-#hero h2 {
-  color: #576971;
+#hero h5 {
+  color: white;
   margin-bottom: 30px;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 #hero .btn-get-started {
@@ -642,7 +689,7 @@ section {
   border: 6px solid #fff;
 }
 .width-ovr{
-  width: 100px;
+  width: 80px;
 }
 .width-adani{
   width: 200px;
