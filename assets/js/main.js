@@ -285,6 +285,11 @@ new Swiper('.clients-slider', {
     })
   });
 
+  /**
+ * Initiate Pure Counter 
+ */
+new PureCounter();
+
 })()
 
 
@@ -338,4 +343,15 @@ function validatingURl(){
 }
 
 validatingURl();
+
+window.addEventListener('load', () => {
+  AOS.init({
+    duration: 1000,
+    easing: 'ease-in-out',
+    once: true,
+    mirror: false
+  })
+});
+
+
 
