@@ -1422,12 +1422,7 @@ button[type=submit]:hover {
   margin-top: 70px;
 } */
 
-.show {
-  display: block !important;
-  opacity: 1 !important;
-  visibility: visible !important;
-  overflow : hidden !important;
-}
+
 
 /* # Breadcrumbs
 --------------------------------------------------------------*/ 
