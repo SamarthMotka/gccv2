@@ -250,7 +250,23 @@ h6 {
   transition: 0.4s;
   border-radius: 4px;
 }
-.callus-nav a {
+.callus-acc a {
+  color: #fff;
+}
+.callus-acc{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.callus-acc button{
+  background: #00B4D8;
+  border: 0;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 4px;
+}
+.callus-acc a {
   color: #fff;
 }
 .navbar {
@@ -402,6 +418,22 @@ h6 {
     border-radius: 4px;
   }
   .callus-nav a {
+    color: #fff;
+  }
+  .callus-acc{
+    width: 100%;
+    margin-right:12px;
+    text-align: center;
+  }
+  .callus-acc button{
+    background: #00B4D8;
+    border: 0;
+    padding: 10px 24px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 4px;
+  }
+  .callus-acc a {
     color: #fff;
   }
 }
