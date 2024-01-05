@@ -1517,3 +1517,7 @@ button[type=submit]:hover {
   font-size: 14px;
   color: #1e6ca6;
 }
+.show-pop{
+  overflow: visible;
+  visibility: visible;
+}

@@ -872,8 +872,8 @@
     document.addEventListener('DOMContentLoaded', function() {
       setTimeout(function() {
         // Show the  modal
-        document.getElementById('contactModal').classList.add('show');
-      }, 20000); // 10000 milliseconds = 10 seconds
+        document.getElementById('contactModal').classList.add('show-pop');
+      }, 10000); // 10000 milliseconds = 10 seconds
     });
   </script>
   <script>
@@ -884,7 +884,7 @@
   
       
       Element.addEventListener('click', function() {
-      mainElement.classList.remove('show');
+      mainElement.classList.remove('show-pop');
       
       });
     });
