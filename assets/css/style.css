@@ -1385,7 +1385,7 @@ button[type=submit]:hover {
   
 }
 
-/* contact section  */
+/*  section  */
 
 @media (max-width:600px) {
   .col{
@@ -1516,8 +1516,4 @@ button[type=submit]:hover {
   font-weight: 600;
   font-size: 14px;
   color: #1e6ca6;
-}
-.show-pop{
-  overflow: visible;
-  visibility: visible;
 }
