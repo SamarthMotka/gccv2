@@ -1517,3 +1517,8 @@ button[type=submit]:hover {
   font-size: 14px;
   color: #1e6ca6;
 }
+.show {
+  display: block !important;
+  visibility: visible !important;
+  /* overflow : hidden !important; */
+}
