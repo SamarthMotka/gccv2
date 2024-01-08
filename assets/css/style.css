@@ -232,6 +232,39 @@ h6 {
     text-align: left;
   }
 }
+.nav-contact-no h4{
+  font-family: 'Space Mono', monospace;
+  margin: auto 0px;
+
+}
+.animate-charcter
+{
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #05cdff 25%,
+    #231557 50%,
+    #05ffff 75%,
+    #231557 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-text-fill-color: transparent ;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -444,6 +477,12 @@ h6 {
     color: #fff;
   }
   
+}
+
+@media (max-width:845px) {
+  .nav-contact-no{
+    display: none;
+  }
 }
 
 .navbar-mobile {
@@ -1479,7 +1518,7 @@ button[type=submit]:hover {
     background-color: #00B4D8;
     color: white;
     text-align: center;
-    width: 180px;
+    width: 230px;
     height: 30px;
     margin: 0 auto;
     border-radius: 20px;
