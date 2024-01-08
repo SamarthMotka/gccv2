@@ -288,7 +288,7 @@ new Swiper('.clients-slider', {
   /**
  * Initiate Pure Counter 
  */
-// new PureCounter();
+// 
 
 })()
 
@@ -355,3 +355,4 @@ window.addEventListener('load', () => {
 
 
 
+// new PureCounter();
