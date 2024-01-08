@@ -1448,12 +1448,7 @@ button[type=submit]:hover {
     justify-content: center;
     width: 100%;
   }
-  .no-contact-main a{
-    margin-bottom: 20px;
-    font-size: 14px;
-    color: #627680;
-    list-style: none;
-  }
+  
   
 }
 @media (max-width:600px){
@@ -1566,4 +1561,10 @@ button[type=submit]:hover {
   display: block !important;
   visibility: visible !important;
   /* overflow : hidden !important; */
+}
+.no-contact-main a{
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #627680 !important;
+  list-style: none;
 }
