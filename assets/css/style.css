@@ -692,6 +692,9 @@ section {
   padding: 0;
   margin-top: 40px;
 }
+/* .about img{
+  width: 100%;
+} */
 
 .about .container {
   background-color: #f7f8f9;
@@ -714,6 +717,10 @@ section {
 .about .content ul {
   list-style: none;
   padding: 0;
+  font-size: 1rem;
+}
+.about .content p {
+  font-size: 1rem;
 }
 
 .about .content ul li {
