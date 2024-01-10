@@ -16,7 +16,6 @@
   background: #ffffff;
   height: 100%;
   border-radius: 10px;
-  /* border: 3px solid #00B4D8; */
 }
 
 .services .service-item .icon {
@@ -73,20 +72,6 @@
   }
 }
 
-
-/* .services .service-item .icon:before {
-  position: absolute;
-  content: "";
-  height: 100%;
-  width: 100%;
-  background: #eeeeee;
-  border-radius: 50px;
-  z-index: 1;
-  top: 10px;
-  right: -20px;
-  transition: 0.3s;
-} */
-
 .services .service-item h3 {
   color: var(--color-default);
   font-weight: 700;
@@ -115,7 +100,7 @@
 }
 
 .services .service-item:hover {
-  /* background: #00B4D8; */
+
   transition: 0.5s
 }
 
@@ -584,19 +569,6 @@ h6 {
   /* height: 350px; */
 }
 
-/* .hero-about-link{
-display: flex;
-flex-direction: row;
-justify-content: center;
-text-align: center;
-} */
-
-/* .hero-h1{
-  margin: 0 auto;;
-}  */
-/* .btn-get-started{
-  margin: 0 auto;;
-}  */
 #hero h1 {
   margin: 0 0 20px 0;
   font-size: 40px;
@@ -692,9 +664,7 @@ section {
   padding: 0;
   margin-top: 40px;
 }
-/* .about img{
-  width: 100%;
-} */
+
 
 .about .container {
   background-color: #f7f8f9;
@@ -768,8 +738,7 @@ section {
 }
 
 .testimonials .testimonial-item .testimonial-img {
-  /* width: 90px; */
-  /* border-radius: 50%; */
+
   margin: -40px 0 0 40px;
   position: relative;
   z-index: 2;
@@ -935,12 +904,7 @@ section {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
-/* .contactDetails{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin: 30px;
-} */
+
 .no-contact{
   margin: 10px 0;
 }
@@ -949,7 +913,7 @@ section {
 }
 
 .no-contact-main{
-  /* margin: 0px 50px; */
+
   margin-left: 50px;
   margin-bottom: 50px;
 }
@@ -965,8 +929,6 @@ section {
 
 
 .col{
-  /* align-items: center; */
-  /* text-align: center; */
   margin: 25px;
 }
 
@@ -1333,14 +1295,12 @@ button[type=submit]:hover {
     background: #ffffff;
     height: 100%;
     border-radius: 10px;
-    /* border: 3px solid #00B4D8; */
   }
   
   .services .service-item .icon {
     width: 20px;
     height: 20px;
     margin: 0 auto;
-    /* position: relative; */
     margin-bottom: 30px;
   }
   
@@ -1349,7 +1309,7 @@ button[type=submit]:hover {
     font-size: 30px;
     transition: ease-in-out 0.3s;
     z-index: 2;
-    /* position: relative; */
+  
   }
   .spc{
     padding: 0 5px ;
@@ -1421,7 +1381,6 @@ button[type=submit]:hover {
   }
   
   .services .service-item:hover {
-    /* background: #00B4D8; */
     transition: 0.5s
   }
   
@@ -1445,7 +1404,7 @@ button[type=submit]:hover {
 @media (max-width:800px) {
   .footer-logo{
     max-width: 50%;
-    /* max-height: 70%; */
+
     
   }
   .footer-newsletter a{
@@ -1465,9 +1424,6 @@ button[type=submit]:hover {
   }
 }
 
-/* .accordion{
-  margin-top: 70px;
-} */
 
 
 
