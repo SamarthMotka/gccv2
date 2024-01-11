@@ -840,7 +840,7 @@
       Email.send({
         SecureToken : "fb3b054e-2ff2-4451-9669-92d4a4ebef2e",
     To : 'info@girishchaudharyassociates.com',
-    From : "tejdoshi.ict19@gmail.com",
+    From : "inquiry.gcacustomer@gmail.com",
     Subject : "You have received a new Entry",
     Body : "Name: " + document.getElementById("name").value
     + "<br> Email: " + document.getElementById('email').value
@@ -863,7 +863,7 @@
       Email.send({
         SecureToken : "fb3b054e-2ff2-4451-9669-92d4a4ebef2e",
     To : 'info@girishchaudharyassociates.com',
-    From : "tejdoshi.ict19@gmail.com",
+    From : "inquiry.gcacustomer@gmail.com",
     Subject : "You have received a new Entry",
     Body : "Name: " + document.getElementById("name1").value
     + "<br> Email: " + document.getElementById('email1').value
@@ -871,7 +871,8 @@
     + "<br> Service type:  " + document.getElementById('fourth').value
     + "<br> Additional Query: " + document.getElementById('query1').value
 }).then(
-  message => { 
+  message => {
+ 
     if(message == 'OK'){
       Swal.fire({
   title: "Your Query has been received successfully!",
