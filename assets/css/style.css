@@ -1482,12 +1482,13 @@ button[type=submit]:hover {
     background-color: #00B4D8;
     color: white;
     text-align: center;
-    width: 230px;
-    height: 30px;
+    width: 290px;
+    height: 27px;
     margin: 0 auto;
     border-radius: 20px;
     padding: 2.5px;
     visibility: visible;
+    font-size: 14px;
   }
 
 }
