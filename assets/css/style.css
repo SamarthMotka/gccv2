@@ -922,6 +922,7 @@ section {
   font-size: 14px;
   color: #627680;
   list-style: none;
+  word-wrap: break-word;
 }
 .loc-contact{
   margin: 10px 0;
